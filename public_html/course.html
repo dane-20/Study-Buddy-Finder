@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study Buddy Finder</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="courseClient.js"></script>
+</head>
+<body>
+    <div id="courseSidebar">
+        <div class="toggleBtn" onclick="show()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <h3 class="today">Today is:</h3>
+        <span class="date"></span>
+        <ul>
+            <a href="home.html"><li class="navBtn">Home</li></a>
+            <li class="navBtn">Edit Groups</li>
+            <a href="chat.html"><li class="navBtn">Chat Rooms</li></a>
+            <li class="navBtn">Resources</li>
+        </ul>
+    </div>
+    <div class="headerBody">
+        <div class="header">
+            <h1>Study Buddy Finder</h1>
+        </div>
+    </div>
+    <div id="courseBody">
+        <div id="welcomeCourse">
+            <h2>Hello! What would you like to do?</h2>
+        </div>
+        <div id="addCourse">
+            <h3>Add a Course</h3>
+            <label for="courseSearch">Course:</label>
+            <input type="text" id="courseSearch" name="courseSearch" placeholder="Ex: CSC337">
+            <br><br>
+            <label for="profSearch">Professor:</label>
+            <input type="text" id="profSearch" name="profSearch" placeholder="Johnny Appleseed">
+            <br><br>
+            <input type="button" id="addButton" value="Add" name="button">
+            <br>
+            <h4 id="addResult"></h4>
+        </div>
+        <div id="delCourse">
+            <h3>Your Courses</h3>
+
+        </div>
+    </div>
+</body>
+</html>

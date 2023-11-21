@@ -1,0 +1,275 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #333333;
+}
+
+.header {
+    color: #17D9FF;
+    border-bottom: solid 1px;
+    border-color: lightgrey;
+    text-align: center;
+}
+
+/* index.html style */
+.mainBody {
+    margin: 15px;
+}
+
+#login {
+    color: #17D9FF;
+}
+
+#loginFail {
+    color: #F65353;
+}
+
+#loginButton, #createUserButton {
+    background-color: #17D9FF;
+    margin: 25px 55px;
+}
+
+#userSuccess {
+    color: #FDFF85;
+}
+
+#createSection {
+    color: #17D9FF;
+}
+
+/* home.html stylization */
+
+#sidebar {
+    position: fixed;
+    width: 300px;
+    height: 100%;
+    background-color: #282828 !important;
+    left: -300px;
+    transition: .4s;
+    margin-top: 60px;
+}
+
+#sidebar.active {
+    left: 0;
+}
+
+.today {
+    color: #17D9FF;
+    padding: 0px 24px;
+}
+
+.date {
+    color: #17D9FF;
+    padding: 20px 24px;
+}
+
+#sidebar ul li {
+    list-style: none;
+    color: white;
+    font-size: 20px;
+    padding: 5px 10px;
+    width: 150px;
+}
+
+.navBtn {
+    background-color: #333333;
+    border: solid 1px;
+    border-color: black;
+    margin: 30px 5px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.navBtn:hover {
+    background-color: #17D9FF;
+    color: black;
+}
+
+#sidebar .toggleBtn {
+    position: absolute;
+    top: 30px;
+    left: 330px;
+}
+
+.toggleBtn span {
+    width: 30px;
+    height: 2px;
+    background: #17D9FF;
+    display: block;
+    margin-top: 4px;
+}
+
+.headerBody {
+    margin: 15px;
+}
+
+.homeBody {
+    margin-left: 375px;
+    color: #17D9FF;
+}
+
+#welcome {
+    margin-left: 50px;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* chat.html stylization */
+#chatBody {
+    background-color: #333333;
+}
+
+#footer {
+    background-color: #282828;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    padding: 30px 5px;
+    transition: .4s;
+    text-align: center;
+}
+
+#footer.active {
+    margin-left: 300px;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    width: 80%;
+}
+
+#chatBody {
+    font-size: 20px;
+    color: #17D9FF;
+    margin-top: 60px;
+    margin-left: 200px;
+    width: 100%;
+    transition: .4s;
+}
+
+#chatBody.active {
+    margin-left: 400px;
+    width: 80%;
+}
+
+#message {
+    background-color: #333333;
+    color: white;
+    width: 75%;
+    height: 40px;
+    font-size: 20px;
+    margin: 5px 20px;
+}
+
+#send {
+    background-color: #17D9FF;
+    width: 80px;
+    height: 45px;
+    font-size: 20px;
+    margin: 5px 20px;
+}
+
+#chatDate {
+    color: #17D9FF;
+    padding: 20px 24px;
+}
+
+#chatSidebar {
+    position: fixed;
+    width: 300px;
+    height: 100%;
+    background-color: #282828 !important;
+    left: -300px;
+    transition: .4s;
+    margin-top: 3px;
+}
+
+#chatSidebar.active {
+    left: 0;
+}
+
+#chatSidebar ul li {
+    list-style: none;
+    color: white;
+    font-size: 20px;
+    padding: 5px 10px;
+    width: 150px;
+}
+
+#chatSidebar .toggleBtn {
+    position: absolute;
+    top: 30px;
+    left: 330px;
+}
+
+.toggleBtn span {
+    width: 30px;
+    height: 2px;
+    background: #17D9FF;
+    display: block;
+    margin-top: 4px;
+}
+
+/* course.html stylization */
+
+#courseSidebar {
+    position: fixed;
+    width: 300px;
+    height: 100%;
+    background-color: #282828 !important;
+    left: -300px;
+    transition: .4s;
+    margin-top: 60px;
+}
+
+#courseSidebar.active {
+    left: 0;
+}
+
+#courseSidebar ul li {
+    list-style: none;
+    color: white;
+    font-size: 20px;
+    padding: 5px 10px;
+    width: 150px;
+}
+
+#courseSidebar .toggleBtn {
+    position: absolute;
+    top: 30px;
+    left: 330px;
+}
+
+.toggleBtn span {
+    width: 30px;
+    height: 2px;
+    background: #17D9FF;
+    display: block;
+    margin-top: 4px;
+}
+
+#courseBody {
+    text-align: center;
+}
+
+#welcomeCourse {
+    color:#17D9FF;
+    margin: 30px 10px;
+}
+
+#addCourse {
+    color: #17D9FF;
+    margin: 50px 600px;
+    border: 2px solid;
+    border-color: #282828;
+    padding: 20px 20px;
+}
+
+#addButton {
+    background-color: #17D9FF;
+}
+
+#delCourse {
+    color:#17D9FF;
+}

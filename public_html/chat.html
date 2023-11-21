@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study Buddy Finder</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="chatClient.js"></script>
+</head>
+<body>
+    <div class="header">
+        <h2>{Chat Room Name}</h2>
+        <span id="chatDate"></span>
+    </div>
+    <div id="chatSidebar">
+        <div class="toggleBtn" onclick="show()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <h3 class="today">Today is:</h3>
+        <span class="date"></span>
+        <ul>
+            <a href="home.html"><li class="navBtn">Home</li></a>
+            <li class="navBtn">Edit Groups</li>
+            <a href="course.html"><li class="navBtn">Add/Del Course</li></a>
+            <li class="navBtn">Resources</li>
+        </ul>
+    </div>
+    <!--Messages will be displayed here-->
+    <div id="chatBody">dane: test message</div>
+    <div id="footer">
+        <!--Message box for typing message-->
+        <input type="text" id="message" placeholder="Send something..." name="message">
+        <!--Message send button-->
+        <input type="button" value="SEND" id="send" onclick="sendMessage()">
+    </div>
+</body>
+</html>
