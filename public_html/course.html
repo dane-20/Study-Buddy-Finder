@@ -19,10 +19,11 @@
         <span class="date"></span>
         <ul>
             <a href="home.html"><li class="navBtn">Home</li></a>
-            <li class="navBtn">Edit Groups</li>
-            <a href="chat.html"><li class="navBtn">Chat Rooms</li></a>
-            <li class="navBtn">Resources</li>
+            <a href="groups.html"><li class="navBtn">Edit Groups</li></a>
+            <a href="meet.html"><li class="navBtn">Meet-Ups</li></a>
+            <li class="navBtn">Help</li>
         </ul>
+        <h3 class="logOut" onclick="logoutUser()">Log Out</h3>
     </div>
     <div class="headerBody">
         <div class="header">
@@ -36,10 +37,10 @@
         <div id="addCourse">
             <h3>Add a Course</h3>
             <label for="courseSearch">Course:</label>
-            <input type="text" id="courseSearch" name="courseSearch" placeholder="Ex: CSC337">
+            <input type="text" id="courseSearch" name="courseSearch" placeholder="Ex: CSC337" pattern="[A-Z0-9]{6,}">
             <br><br>
             <label for="profSearch">Professor:</label>
-            <input type="text" id="profSearch" name="profSearch" placeholder="Johnny Appleseed">
+            <input type="text" id="profSearch" name="profSearch" placeholder="Johnny Appleseed" pattern="[A-Za-z]+(?: [A-Za-z]+)*[^ ]$">
             <br><br>
             <input type="button" id="addButton" value="Add" name="button">
             <br>
@@ -47,7 +48,6 @@
         </div>
         <div id="delCourse">
             <h3>Your Courses</h3>
-
         </div>
     </div>
 </body>

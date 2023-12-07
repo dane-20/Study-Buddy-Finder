@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Study Buddy Finder</title>
     <link rel="stylesheet" type="text/css" href="style.css">
-    <script src="homeClient.js"></script>
+    <script src="meetClient.js"></script>
 </head>
 <body>
-    <div id="sidebar">
+    <div id="meetSidebar">
         <div class="toggleBtn" onclick="show()">
             <span></span>
             <span></span>
@@ -18,9 +18,9 @@
         <h3 class="today">Today is:</h3>
         <span class="date"></span>
         <ul>
+            <a href="home.html"><li class="navBtn">Home</li></a>
             <a href="course.html"><li class="navBtn">Add/Del a Course</li></a>
             <a href="groups.html"><li class="navBtn">Edit Groups</li></a>
-            <a href="meet.html"><li class="navBtn">Meet-Ups</li></a> 
             <li class="navBtn">Help</li>
         </ul>
         <h3 class="logOut" onclick="logoutUser()">Log Out</h3>
@@ -30,24 +30,29 @@
             <h1>Study Buddy Finder</h1>
         </div>
     </div>
-    <div id="homeBody">
-        <!--greeting message-->
-        <h2 id="greeting"></h2>
-        <div id="homeCourses">
-            <!--user courses will be displayed here-->
-            <h2>My Courses:</h2>
-            <div id="coursesList">
-                
-            </div>
+    <div id="meetBody">
+        <div id="myGroup">
+            <h2>My Groups:</h2>
         </div>
-        <div id="homeGroups">
-            <h2>My Study Groups:</h2>
-            
+        <div id="addSession">
+            <h2>Add Session:</h2>
+            <label for="buddy">Buddy Username:</label>
+            <input type="text" id="buddy" name="buddy">
+            <br><br>
+            <label for="location">Location:</label>
+            <input type="text" id="location" name="location" placeholder="Ex: Library">
+            <br><br>
+            <label for="date">Date:</label>
+            <input type="datetime-local" id="date" name="date">
+            <br><br>
+            <input type="button" id="sessionCreation" value="Add" name="button">
+            <br>
+            <h4 id="sessionSuccess"></h4>
         </div>
-        <div id="homeSchedule">
-            <h2>Upcoming Study Sessions:</h2>
+        <div id="schedule">
+            <h2>My Schedule:</h2>
+            <div id="sessionList"></div>
         </div>
     </div>
-    
 </body>
 </html>

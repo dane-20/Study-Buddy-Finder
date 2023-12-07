@@ -11,6 +11,16 @@ body {
     text-align: center;
 }
 
+.logOut {
+    color: #17D9FF;
+    text-align: center;
+    margin-top: 250px;
+}
+
+.logOut:hover {
+    color: white;
+}
+
 /* index.html style */
 .mainBody {
     margin: 15px;
@@ -31,6 +41,10 @@ body {
 
 #userSuccess {
     color: #FDFF85;
+}
+
+#userFail {
+    color: #F65353;
 }
 
 #createSection {
@@ -103,113 +117,40 @@ body {
     margin: 15px;
 }
 
-.homeBody {
-    margin-left: 375px;
+#homeBody {
+    margin-left: 200px;
     color: #17D9FF;
+    transition: .4s;
+}
+
+#homeBody.active {
+    margin-left: 400px;
 }
 
 #welcome {
-    margin-left: 50px;
+    margin: 20px 50px;
+    margin-bottom: 60px;
+}
+
+#homeCourses {
+    margin: 50px 50px;
+    color: #17D9FF;
+}
+
+#homeGroups {
+    margin: 50px 50px;
+    color: #17D9FF;
+}
+
+#homeSchedule {
+    margin: 50px 50px;
+    color: #17D9FF;
 }
 
 a {
     text-decoration: none;
 }
 
-/* chat.html stylization */
-#chatBody {
-    background-color: #333333;
-}
-
-#footer {
-    background-color: #282828;
-    position: absolute;
-    bottom: 0px;
-    width: 100%;
-    padding: 30px 5px;
-    transition: .4s;
-    text-align: center;
-}
-
-#footer.active {
-    margin-left: 300px;
-    position: absolute;
-    bottom: 0px;
-    right: 0px;
-    width: 80%;
-}
-
-#chatBody {
-    font-size: 20px;
-    color: #17D9FF;
-    margin-top: 60px;
-    margin-left: 200px;
-    width: 100%;
-    transition: .4s;
-}
-
-#chatBody.active {
-    margin-left: 400px;
-    width: 80%;
-}
-
-#message {
-    background-color: #333333;
-    color: white;
-    width: 75%;
-    height: 40px;
-    font-size: 20px;
-    margin: 5px 20px;
-}
-
-#send {
-    background-color: #17D9FF;
-    width: 80px;
-    height: 45px;
-    font-size: 20px;
-    margin: 5px 20px;
-}
-
-#chatDate {
-    color: #17D9FF;
-    padding: 20px 24px;
-}
-
-#chatSidebar {
-    position: fixed;
-    width: 300px;
-    height: 100%;
-    background-color: #282828 !important;
-    left: -300px;
-    transition: .4s;
-    margin-top: 3px;
-}
-
-#chatSidebar.active {
-    left: 0;
-}
-
-#chatSidebar ul li {
-    list-style: none;
-    color: white;
-    font-size: 20px;
-    padding: 5px 10px;
-    width: 150px;
-}
-
-#chatSidebar .toggleBtn {
-    position: absolute;
-    top: 30px;
-    left: 330px;
-}
-
-.toggleBtn span {
-    width: 30px;
-    height: 2px;
-    background: #17D9FF;
-    display: block;
-    margin-top: 4px;
-}
 
 /* course.html stylization */
 
@@ -250,17 +191,31 @@ a {
 }
 
 #courseBody {
+    color: #17D9FF;
+    transition: .4s;
+    margin-left: 150px;
     text-align: center;
+    max-height: 640px;
+    overflow: scroll;
+}
+
+#courseBody.active {
+    margin-left: 400px;
 }
 
 #welcomeCourse {
     color:#17D9FF;
-    margin: 30px 10px;
+    padding-right: 150px;
 }
 
 #addCourse {
     color: #17D9FF;
-    margin: 50px 600px;
+    width: 25%;
+    margin-right: 100px;
+    text-align: center;
+    position: relative;
+    left: 100px;
+    float: left;
     border: 2px solid;
     border-color: #282828;
     padding: 20px 20px;
@@ -271,5 +226,216 @@ a {
 }
 
 #delCourse {
-    color:#17D9FF;
+    color: #17D9FF;
+    width: 25%;
+    margin-left: 100px;
+    margin-right: 5%;
+    text-align: center;
+    position: relative;
+    left: 100px;
+    float: left;
+    border: 2px solid;
+    border-color: #282828;
+    padding: 20px 20px;
+}
+
+.removeButton {
+    background-color: #17D9FF;
+}
+
+/* groups.html stylization */
+
+#groupsSidebar {
+    position: fixed;
+    width: 300px;
+    height: 100%;
+    background-color: #282828 !important;
+    left: -300px;
+    transition: .4s;
+    margin-top: 60px;
+}
+
+#groupsSidebar.active {
+    left: 0;
+}
+
+#groupsSidebar ul li {
+    list-style: none;
+    color: white;
+    font-size: 20px;
+    padding: 5px 10px;
+    width: 150px;
+}
+
+#groupsSidebar .toggleBtn {
+    position: absolute;
+    top: 30px;
+    left: 330px;
+}
+
+.toggleBtn span {
+    width: 30px;
+    height: 2px;
+    background: #17D9FF;
+    display: block;
+    margin-top: 4px;
+}
+
+#groupsBody {
+    margin-left: 150px;
+    color: #17D9FF;
+    transition: .4s;
+    max-height: 640px;
+    overflow: scroll;
+}
+
+#groupsBody.active {
+    margin-left: 400px;
+}
+
+#suggested {
+    width: 25%;
+    margin-right: 100px;
+    text-align: center;
+    position: relative;
+    left: 100px;
+    float: left;
+    border: 2px solid;
+    border-color: #282828;
+    padding: 20px 20px;
+}
+
+#suggested button {
+    background-color: #17D9FF;
+}
+
+#groupList {
+    width: 25%;
+    margin-left: 100px;
+    text-align: center;
+    position: relative;
+    left: 100px;
+    float: left;
+    border: 2px solid;
+    border-color: #282828;
+    padding: 20px 20px;
+}
+
+#groupList button {
+    background-color: #17D9FF;
+}
+
+/* meet.html stylization */
+#meetSidebar {
+    position: fixed;
+    width: 300px;
+    height: 100%;
+    background-color: #282828 !important;
+    left: -300px;
+    transition: .4s;
+    margin-top: 60px;
+}
+
+#meetSidebar.active {
+    left: 0;
+}
+
+#meetSidebar ul li {
+    list-style: none;
+    color: white;
+    font-size: 20px;
+    padding: 5px 10px;
+    width: 150px;
+}
+
+#meetSidebar .toggleBtn {
+    position: absolute;
+    top: 30px;
+    left: 330px;
+}
+
+.toggleBtn span {
+    width: 30px;
+    height: 2px;
+    background: #17D9FF;
+    display: block;
+    margin-top: 4px;
+}
+
+#meetBody {
+    margin-left: 100px;
+    color: #17D9FF;
+    transition: .4s;
+    max-height: 640px;
+    overflow: scroll;
+}
+
+#meetBody.active {
+    margin-left: 300px;
+}
+
+#myGroup {
+    width: 25%;
+    margin-right: 25px;
+    text-align: center;
+    position: relative;
+    left: 100px;
+    float: left;
+    border: 2px solid;
+    border-color: #282828;
+    padding: 20px 10px;
+}
+
+#addSession {
+    width: 25%;
+    margin-left: 25px;
+    margin-right: 25px;
+    text-align: center;
+    position: relative;
+    left: 100px;
+    float: left;
+    border: 2px solid;
+    border-color: #282828;
+    padding: 20px 10px;
+}
+
+#markCompletedBtn {
+    background-color: #17D9FF;
+}
+
+#schedule {
+    width: 25%;
+    margin-left: 25px;
+    margin-right: 25px;
+    text-align: center;
+    position: relative;
+    left: 100px;
+    float: left;
+    border: 2px solid;
+    border-color: #282828;
+    padding: 20px 20px;
+}
+
+#sessionCreation {
+    background-color: #17D9FF;
+}
+
+/* help.html stylization */
+#helpBody {
+    text-align: center;
+}
+
+#back {
+    color: #17D9FF;
+    background-color: #282828;
+    margin: 100px 10px;
+    padding: 10px 10px;
+    border: solid 1px;
+    border-color: black;
+    border-radius: 10px;
+}
+
+#back:hover {
+    color: white;
+    background-color: #17D9FF;
 }
